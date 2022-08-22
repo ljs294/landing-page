@@ -26,7 +26,7 @@ ul {
 .main1 {
     background-color: #1F2937;
     color: #E5E7EB;
-    padding: 0px 256px;
+    padding: 64px 256px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,10 +44,14 @@ ul {
 
 .main2 {
     color: #1F2937;
-    font-weight: bolder;
-    font-size: 36px;
     text-align: center;
     padding: 0px 256px;
+}
+
+.main2 h1 {
+    font-size: 36px;
+    font-weight: bolder;
+    margin: 48px;
 }
 
 .block1 {
