@@ -1,126 +1,156 @@
-body {
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.header {
-    background-color: #1F2937;
+.main {
+    padding: 64px 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header {
+    background-color: #1f2937;
+    padding: 0% 15%;
+}
+
+#header p {
+    color: #e5e7eb;
+    font-size: 18px;
+    padding: 8px;
+}
+
+#header h1 {
+    color: #f9faf8;
     font-size: 24px;
-    font-weight: bolder;
-    color: #E5E7EB;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 256px;
+    padding: 8px;
 }
 
-ul {
-    list-style: none;
-    display: flex;
-    gap: 16px;
-    font-size: 18px;
-    color: #E5E7EB;
+#hero {
+    flex: 1;
+    background-color: #1f2937;
+    gap: 64px;
 }
 
-.main1 {
-    background-color: #1F2937;
-    color: #E5E7EB;
-    padding: 64px 256px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.main1 p {
-    font-size: 18px;
-    margin: 4px;
-}
-
-.main1 h1 {
+#hero h1 {
+    color: #f9faf8;
     font-size: 48px;
+    padding: 4px 8px;
     margin: 0px;
 }
 
-.main2 {
-    color: #1F2937;
-    text-align: center;
-    padding: 0px 256px;
-    margin-bottom: 32px;
-}
-
-.main2 h1 {
-    font-size: 36px;
-    font-weight: bolder;
-    margin: 48px;
-}
-
-.block1 {
-
-}
-
-.block2 {
-
-}
-
-.img1 {
-    background-color: darkgray;
-    height: auto;
-    width: 768px;
+#hero p {
+    color: #e5e7eb;
+    font-size: 18px;
+    padding: 4px 8px;
+    margin: 0px;
 }
 
 .signup {
     background-color: #3882f6;
-    color: #E5E7EB;
-    font-size: 18px;
-    font-weight: bold;
     border-radius: 4px;
     border-style: none;
-    padding: 4px 16px;
+    padding: 8px 16px;
+    margin: 4px 8px;
+    color: #f9faf8;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#hero-img {
+    height: auto;
+    width: 50%;
+    background-color: grey;
+    border-radius: 4px;
+    flex-shrink: 0;
+    color: #f9faf8;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 32px 0px;
+}
+
+#one {
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
     display: flex;
     justify-content: space-between;
-    gap: 16px;
+    align-items: center;
+    margin: 16px;
 }
 
-.card {
+.cards {
     display: flex;
     flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
 }
 
 .img2 {
-    height: 150px;
-    width: 150px;
-    border: #3882f6;
-    border-radius: 4px;
-    border-width: 1px;
     background-color: #3882f6;
+    border-width: 2px;
+    min-width: 150px;
+    min-height: 150px;
+    border-radius: 8px;
 }
 
-.main3 {
-    display: flex;
+#quote {
     flex-direction: column;
-    background-color: #E5E7EB;
-    padding: 64px 256px;
+    background-color: #e5e7eb;
+
 }
 
 .quote {
-    font-size: 36px;
-    color: #1F2937;
-    font-style: italic;
     font-weight: lighter;
-    text-align:justify;
-    margin: 0px;
+    font-style: italic;
+    color: #1f2937;
+    font-size: 36px;
+    text-align: justify;
 }
 
 .author {
-    font-size: 24px;
-    color: #1F2937;
-    font-weight: bold;
+    font-size: 28px;
+    font-weight: bolder;
     text-align: right;
-    margin: 0px;
+}
+
+#closer {
+    display: flex;
+    justify-content: center;
+}
+
+#call-to-action {
+    background-color: #3882f6;
+    color: #f9faf8;
+    display: flex;
+    border-radius: 4px;
+    padding: 32px 64px;
+    align-items: center;
+    gap: 64px;
+}
+
+#closer h1 {
+    font-size: 28px;
+    margin: 8px 0px;
+}
+
+#closer p {
+    margin: 8px 0px;
+}
+
+#closer .signup {
+    border-color: #f9faf8;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#footer {
+    background-color: #1f2937;
+    color: #f9faf8;
+    justify-content: center;
 }
